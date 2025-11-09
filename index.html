@@ -28,14 +28,32 @@
     <!-- Canonical URL -->
     <link rel="canonical" href="https://howard-photography.com/">
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
+    <script src="header.js"></script>
 </head>
 <body>
+    <!-- Header loaded dynamically from header.html -->
+
     <main>
         <!-- Hero Section -->
         <section class="hero">
             <h1>Howard Photography</h1>
             <p class="tagline">Capturing moments that matter</p>
+        </section>
+
+        <!-- Promotional Banner -->
+        <section class="promo-banner">
+            <div class="promo-content">
+                <span class="promo-badge">New Business Special</span>
+                <h3 class="promo-title">Limited Time Offer</h3>
+                <p class="promo-text">Be among our first 10 customers and receive a special discounted rate on your photography session!</p>
+                <a href="#contact" class="promo-cta">Book Your Session</a>
+            </div>
         </section>
 
         <!-- About Section -->
@@ -44,20 +62,46 @@
             <p>Welcome to Howard Photography. We specialize in creating timeless images that tell your story.</p>
         </section>
 
+        <!-- Services Section -->
+        <section class="services">
+            <h2>Services</h2>
+            <p class="services-intro">From the energy of canine agility to the grace of equine dressage, and the warmth of family moments—we capture the subjects you love with artistry and precision.</p>
+
+            <div class="services-grid">
+                <a href="services.html#canine" class="service-card">
+                    <h3>Canine Photography</h3>
+                    <p>Portraits and action shots capturing your dog's unique personality and athleticism, from agility competitions to playful moments.</p>
+                </a>
+
+                <a href="services.html#equine" class="service-card">
+                    <h3>Equine Photography</h3>
+                    <p>Professional horse photography including dressage, jumping, and portraits that showcase the beauty and power of your equine partner.</p>
+                </a>
+
+                <a href="services.html#family" class="service-card">
+                    <h3>Family Photography</h3>
+                    <p>Traditional family portraits that celebrate your connections, milestones, and the moments that bring you together.</p>
+                </a>
+            </div>
+
+            <a href="services.html" class="services-link">View All Services</a>
+        </section>
+
         <!-- Gallery Link Section -->
         <section class="gallery">
-            <h2>7-9 Nov ASCA Gallery available until 31 Dec 2025</h2>
+            <h2>8-9 Nov ASCA Gallery pending; will be available from 12 Nov 2025 until 31 Dec 2025</h2>
             <a href="https://photos.app.goo.gl/pMoK4KrPQvCNqwaCA" class="gallery-link" target="_blank" rel="noopener noreferrer">
-                View 7-9 Nov ASCA Gallery
+                View 8-9 Nov ASCA Gallery
             </a>
 	    <!--<p class="gallery-note">Replace the link above with your Google Drive folder link</p> -->
         </section>
 
         <!-- Contact Section -->
-        <section class="contact">
+        <section class="contact" id="contact">
             <h2>Get In Touch</h2>
             <div class="contact-info">
                 <p><strong>Email:</strong> <a href="mailto:willandrileyhoward@gmail.com">willandrileyhoward@gmail.com</a></p>
+                <p> <a href="https://forms.gle/EPuT14ojRWfHfh8j6">Contact form</a></p>
 		<!-- <p><strong>Phone:</strong> <a href="tel:+15555551234">(555) 555-1234</a></p> -->
             </div>
         </section>
