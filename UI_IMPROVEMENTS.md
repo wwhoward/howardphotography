@@ -4,25 +4,25 @@ This document tracks user interface and user experience improvements.
 
 ## Consistency & Parity
 
-- [ ] Apply non-UI improvements to services.html (favicon, skip-link, Schema.org, ARIA labels)
+- [x] Apply non-UI improvements to services.html (favicon, skip-link, Schema.org, ARIA labels)
 
 ## Navigation & Wayfinding
 
-- [ ] Add mobile hamburger menu for better mobile navigation UX
-- [ ] Add smooth scroll offset to account for sticky header when navigating to anchors
-- [ ] Add back-to-top button for long pages (services page)
+- [x] Add mobile hamburger menu for better mobile navigation UX
+- [x] Add smooth scroll offset to account for sticky header when navigating to anchors
+- [x] Add back-to-top button for long pages (services page)
 
 ## Interactive Elements
 
-- [ ] Enhance CTA button prominence and add subtle pulse animation to promo banner button
-- [ ] Improve keyboard focus visibility with custom focus ring styles
-- [ ] Improve service card hover effects with more engaging animations
+- [x] Enhance CTA button prominence and add subtle pulse animation to promo banner button
+- [x] Improve keyboard focus visibility with custom focus ring styles
+- [x] Improve service card hover effects with more engaging animations
 
 ## Polish & Performance
 
-- [ ] Add transition to page content on load for smoother entry
-- [ ] Add loading skeleton/placeholder for dynamically loaded header
-- [ ] Enhance footer with structured layout and additional useful links
+- [x] Add transition to page content on load for smoother entry
+- [x] Add loading skeleton/placeholder for dynamically loaded header
+- [x] Enhance footer with structured layout and additional useful links
 
 ## Notes
 
