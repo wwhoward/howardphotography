@@ -35,8 +35,8 @@ body {
 
 /* Accessibility: Skip to content link */
 .skip-link {
-    position: absolute;
-    top: -40px;
+    position: fixed;
+    top: -100px;
     left: 0;
     background: var(--text-primary);
     color: var(--bg-primary);
