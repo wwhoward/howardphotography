@@ -97,5 +97,5 @@ Disallow: /
 User-agent: *
 Allow: /
 
-# Sitemap (update this URL once you add one)
-# Sitemap: https://howard-photography.com/sitemap.xml
+# Sitemap
+Sitemap: https://howard-photography.com/sitemap.xml

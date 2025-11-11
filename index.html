@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="apple-touch-icon" href="favicon.svg">
+
+    <!-- Theme Color for Mobile Browsers -->
+    <meta name="theme-color" content="#0a0a0a">
+
+    <!-- Performance Hints -->
+    <link rel="dns-prefetch" href="https://photos.app.goo.gl">
+    <link rel="preconnect" href="https://photos.app.goo.gl" crossorigin>
+
     <!-- Primary Meta Tags -->
     <title>Howard Photography | Professional Photography Services</title>
     <meta name="title" content="Howard Photography | Professional Photography Services">
@@ -18,48 +29,72 @@
     <meta property="og:title" content="Howard Photography | Professional Photography Services">
     <meta property="og:description" content="Howard Photography specializes in creating timeless images that tell your story. Professional photography services capturing moments that matter.">
     <meta property="og:site_name" content="Howard Photography">
+    <!-- TODO: Add og:image meta tag with URL to a social sharing image (1200x630px recommended) -->
+    <!-- <meta property="og:image" content="https://howard-photography.com/og-image.jpg"> -->
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://howard-photography.com/">
     <meta property="twitter:title" content="Howard Photography | Professional Photography Services">
     <meta property="twitter:description" content="Howard Photography specializes in creating timeless images that tell your story. Professional photography services capturing moments that matter.">
+    <!-- TODO: Add twitter:image meta tag with URL to a social sharing image (1200x630px recommended) -->
+    <!-- <meta property="twitter:image" content="https://howard-photography.com/og-image.jpg"> -->
 
     <!-- Canonical URL -->
     <link rel="canonical" href="https://howard-photography.com/">
 
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Howard Photography",
+      "description": "Professional photography services capturing moments that matter",
+      "url": "https://howard-photography.com",
+      "telephone": "",
+      "email": "willandrileyhoward@gmail.com",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "",
+        "addressRegion": "",
+        "addressCountry": ""
+      }
+    }
+    </script>
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
+    <!-- Skip to main content for screen readers -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <main id="main-content">
         <!-- Hero Section -->
-        <section class="hero">
+        <section class="hero" aria-label="Introduction">
             <h1>Howard Photography</h1>
             <p class="tagline">Capturing moments that matter</p>
         </section>
 
         <!-- About Section -->
-        <section class="about">
-            <h2>About</h2>
+        <section class="about" aria-labelledby="about-heading">
+            <h2 id="about-heading">About</h2>
             <p>Welcome to Howard Photography. We specialize in creating timeless images that tell your story.</p>
         </section>
 
         <!-- Gallery Link Section -->
-        <section class="gallery">
-            <h2>7-9 Nov ASCA Gallery available until 31 Dec 2025</h2>
-            <a href="https://photos.app.goo.gl/pMoK4KrPQvCNqwaCA" class="gallery-link" target="_blank" rel="noopener noreferrer">
+        <section class="gallery" aria-labelledby="gallery-heading">
+            <h2 id="gallery-heading">7-9 Nov ASCA Gallery available until 31 Dec 2025</h2>
+            <a href="https://photos.app.goo.gl/pMoK4KrPQvCNqwaCA" class="gallery-link" target="_blank" rel="noopener noreferrer" aria-label="View 7-9 Nov ASCA Gallery (opens in new window)">
                 View 7-9 Nov ASCA Gallery
             </a>
-	    <!--<p class="gallery-note">Replace the link above with your Google Drive folder link</p> -->
         </section>
 
         <!-- Contact Section -->
-        <section class="contact">
-            <h2>Get In Touch</h2>
-            <div class="contact-info">
+        <section class="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Get In Touch</h2>
+            <address class="contact-info">
                 <p><strong>Email:</strong> <a href="mailto:willandrileyhoward@gmail.com">willandrileyhoward@gmail.com</a></p>
-		<!-- <p><strong>Phone:</strong> <a href="tel:+15555551234">(555) 555-1234</a></p> -->
-            </div>
+            </address>
         </section>
 
         <!-- Footer -->
