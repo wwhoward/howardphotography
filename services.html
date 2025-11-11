@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="apple-touch-icon" href="favicon.svg">
+
+    <!-- Theme Color for Mobile Browsers -->
+    <meta name="theme-color" content="#0a0a0a">
+
+    <!-- Performance Hints -->
+    <link rel="dns-prefetch" href="https://photos.app.goo.gl">
+    <link rel="preconnect" href="https://photos.app.goo.gl" crossorigin>
+
     <!-- Primary Meta Tags -->
     <title>Services | Howard Photography</title>
     <meta name="title" content="Services | Howard Photography">
@@ -18,15 +29,43 @@
     <meta property="og:title" content="Services | Howard Photography">
     <meta property="og:description" content="Professional canine, equine, and family photography services. Specializing in action shots, portraits, and capturing the moments that matter most.">
     <meta property="og:site_name" content="Howard Photography">
+    <!-- TODO: Add og:image meta tag with URL to a social sharing image (1200x630px recommended) -->
+    <!-- <meta property="og:image" content="https://howard-photography.com/og-image.jpg"> -->
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://howard-photography.com/services.html">
     <meta property="twitter:title" content="Services | Howard Photography">
     <meta property="twitter:description" content="Professional canine, equine, and family photography services. Specializing in action shots, portraits, and capturing the moments that matter most.">
+    <!-- TODO: Add twitter:image meta tag with URL to a social sharing image (1200x630px recommended) -->
+    <!-- <meta property="twitter:image" content="https://howard-photography.com/og-image.jpg"> -->
 
     <!-- Canonical URL -->
     <link rel="canonical" href="https://howard-photography.com/services.html">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Howard Photography Services",
+      "description": "Professional canine, equine, and family photography services",
+      "provider": {
+        "@type": "ProfessionalService",
+        "name": "Howard Photography",
+        "url": "https://howard-photography.com",
+        "email": "willandrileyhoward@gmail.com",
+        "sameAs": [
+          "https://instagram.com/howardphotographyco"
+        ]
+      },
+      "serviceType": ["Canine Photography", "Equine Photography", "Family Photography"],
+      "areaServed": {
+        "@type": "Place",
+        "name": "United States"
+      }
+    }
+    </script>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,17 +76,39 @@
     <script src="header.js"></script>
 </head>
 <body>
+    <!-- Skip to main content for screen readers -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header loading skeleton -->
+    <div class="header-skeleton">
+        <div class="header-container">
+            <div class="skeleton-logo"></div>
+            <div class="skeleton-nav">
+                <div class="skeleton-link"></div>
+                <div class="skeleton-link"></div>
+                <div class="skeleton-link"></div>
+            </div>
+        </div>
+    </div>
+
     <!-- Header loaded dynamically from header.html -->
 
-    <main>
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <main id="main-content">
         <!-- Hero Section -->
-        <section class="hero">
+        <section class="hero" aria-label="Introduction">
             <h1>Photography Services</h1>
             <p class="tagline">Specialized photography for the subjects you love</p>
         </section>
 
         <!-- Services Introduction -->
-        <section class="services-intro-section">
+        <section class="services-intro-section" aria-labelledby="intro-text">
             <p class="intro-text">At Howard Photography, we understand that every subject has a unique story to tell. Whether it's the boundless energy of your canine companion, the elegant power of your equine partner, or the cherished connections within your family, we bring expertise, patience, and artistry to every session. Our goal is to create images that don't just document a moment—they capture the essence, the emotion, and the beauty that makes each subject extraordinary.</p>
         </section>
 
@@ -112,20 +173,43 @@
         </section>
 
         <!-- Call to Action -->
-        <section class="cta-section">
-            <h2>Ready to Book Your Session?</h2>
+        <section class="cta-section" aria-labelledby="cta-heading">
+            <h2 id="cta-heading">Ready to Book Your Session?</h2>
             <p>Let's create beautiful images together. Whether you're interested in canine photography, equine photography, family portraits, or a combination of services, we'd love to hear from you and discuss how we can capture what matters most to you.</p>
-            <div class="contact-info">
+            <address class="contact-info">
                 <p><strong>Email:</strong> <a href="mailto:willandrileyhoward@gmail.com">willandrileyhoward@gmail.com</a></p>
                 <p><a href="https://forms.gle/EPuT14ojRWfHfh8j6" class="contact-form-link">Contact Form</a></p>
                 <p><strong>Instagram:</strong> <a href="https://instagram.com/howardphotographyco" target="_blank" rel="noopener noreferrer" class="contact-form-link">@howardphotographyco</a></p>
-            </div>
+            </address>
         </section>
 
         <!-- Footer -->
         <footer>
-            <p>&copy; 2025 Howard Photography. All rights reserved.</p>
-            <p><a href="index.html" class="footer-link">Return to Home</a></p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-heading">Howard Photography</h3>
+                    <p class="footer-tagline">Capturing moments that matter</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <nav class="footer-nav">
+                        <a href="index.html" class="footer-link">Home</a>
+                        <a href="services.html" class="footer-link">Services</a>
+                        <a href="index.html#contact" class="footer-link">Contact</a>
+                    </nav>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Connect</h4>
+                    <div class="footer-contact">
+                        <a href="mailto:willandrileyhoward@gmail.com" class="footer-link">Email</a>
+                        <a href="https://instagram.com/howardphotographyco" target="_blank" rel="noopener noreferrer" class="footer-link">Instagram</a>
+                        <a href="https://forms.gle/EPuT14ojRWfHfh8j6" class="footer-link">Contact Form</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Howard Photography. All rights reserved.</p>
+            </div>
         </footer>
     </main>
 </body>

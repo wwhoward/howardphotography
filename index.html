@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="apple-touch-icon" href="favicon.svg">
+
+    <!-- Theme Color for Mobile Browsers -->
+    <meta name="theme-color" content="#0a0a0a">
+
+    <!-- Performance Hints -->
+    <link rel="dns-prefetch" href="https://photos.app.goo.gl">
+    <link rel="preconnect" href="https://photos.app.goo.gl" crossorigin>
+
     <!-- Primary Meta Tags -->
     <title>Howard Photography | Professional Photography Services</title>
     <meta name="title" content="Howard Photography | Professional Photography Services">
@@ -18,15 +29,42 @@
     <meta property="og:title" content="Howard Photography | Professional Photography Services">
     <meta property="og:description" content="Howard Photography specializes in creating timeless images that tell your story. Professional photography services capturing moments that matter.">
     <meta property="og:site_name" content="Howard Photography">
+    <!-- TODO: Add og:image meta tag with URL to a social sharing image (1200x630px recommended) -->
+    <!-- <meta property="og:image" content="https://howard-photography.com/og-image.jpg"> -->
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://howard-photography.com/">
     <meta property="twitter:title" content="Howard Photography | Professional Photography Services">
     <meta property="twitter:description" content="Howard Photography specializes in creating timeless images that tell your story. Professional photography services capturing moments that matter.">
+    <!-- TODO: Add twitter:image meta tag with URL to a social sharing image (1200x630px recommended) -->
+    <!-- <meta property="twitter:image" content="https://howard-photography.com/og-image.jpg"> -->
 
     <!-- Canonical URL -->
     <link rel="canonical" href="https://howard-photography.com/">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Howard Photography",
+      "description": "Professional photography services specializing in canine, equine, and family photography",
+      "url": "https://howard-photography.com",
+      "telephone": "",
+      "email": "willandrileyhoward@gmail.com",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "",
+        "addressRegion": "",
+        "addressCountry": ""
+      },
+      "sameAs": [
+        "https://instagram.com/howardphotographyco"
+      ]
+    }
+    </script>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,79 +75,123 @@
     <script src="header.js"></script>
 </head>
 <body>
+    <!-- Skip to main content for screen readers -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header loading skeleton -->
+    <div class="header-skeleton">
+        <div class="header-container">
+            <div class="skeleton-logo"></div>
+            <div class="skeleton-nav">
+                <div class="skeleton-link"></div>
+                <div class="skeleton-link"></div>
+                <div class="skeleton-link"></div>
+            </div>
+        </div>
+    </div>
+
     <!-- Header loaded dynamically from header.html -->
 
-    <main>
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <main id="main-content">
         <!-- Hero Section -->
-        <section class="hero">
+        <section class="hero" aria-label="Introduction">
             <h1>Howard Photography</h1>
             <p class="tagline">Capturing moments that matter</p>
         </section>
 
         <!-- Promotional Banner -->
-        <section class="promo-banner">
+        <section class="promo-banner" aria-labelledby="promo-heading">
             <div class="promo-content">
                 <span class="promo-badge">New Business Special</span>
-                <h3 class="promo-title">Limited Time Offer</h3>
+                <h3 id="promo-heading" class="promo-title">Limited Time Offer</h3>
                 <p class="promo-text">Be among our first 10 customers and receive a special discounted rate on your photography session!</p>
                 <a href="#contact" class="promo-cta">Book Your Session</a>
             </div>
         </section>
 
         <!-- About Section -->
-        <section class="about">
-            <h2>About</h2>
+        <section class="about" aria-labelledby="about-heading">
+            <h2 id="about-heading">About</h2>
             <p>Welcome to Howard Photography. We specialize in creating timeless images that tell your story.</p>
         </section>
 
         <!-- Services Section -->
-        <section class="services">
-            <h2>Services</h2>
+        <section class="services" aria-labelledby="services-heading">
+            <h2 id="services-heading">Services</h2>
             <p class="services-intro">From the energy of canine agility to the grace of equine dressage, and the warmth of family moments—we capture the subjects you love with artistry and precision.</p>
 
             <div class="services-grid">
-                <a href="services.html#canine" class="service-card">
+                <a href="services.html#canine" class="service-card" aria-label="Learn more about Canine Photography services">
                     <h3>Canine Photography</h3>
                     <p>Portraits and action shots capturing your dog's unique personality and athleticism, from agility competitions to playful moments.</p>
                 </a>
 
-                <a href="services.html#equine" class="service-card">
+                <a href="services.html#equine" class="service-card" aria-label="Learn more about Equine Photography services">
                     <h3>Equine Photography</h3>
                     <p>Professional horse photography including dressage, jumping, and portraits that showcase the beauty and power of your equine partner.</p>
                 </a>
 
-                <a href="services.html#family" class="service-card">
+                <a href="services.html#family" class="service-card" aria-label="Learn more about Family Photography services">
                     <h3>Family Photography</h3>
                     <p>Traditional family portraits that celebrate your connections, milestones, and the moments that bring you together.</p>
                 </a>
             </div>
 
-            <a href="services.html" class="services-link">View All Services</a>
+            <a href="services.html" class="services-link" aria-label="View all photography services">View All Services</a>
         </section>
 
         <!-- Gallery Link Section -->
-        <section class="gallery">
-            <h2>8-9 Nov ASCA Gallery pending; will be available from 12 Nov 2025 until 31 Dec 2025</h2>
-            <a href="https://photos.app.goo.gl/pMoK4KrPQvCNqwaCA" class="gallery-link" target="_blank" rel="noopener noreferrer">
+        <section class="gallery" aria-labelledby="gallery-heading">
+            <h2 id="gallery-heading">8-9 Nov ASCA Gallery pending; will be available from 12 Nov 2025 until 31 Dec 2025</h2>
+            <a href="https://photos.app.goo.gl/pMoK4KrPQvCNqwaCA" class="gallery-link" target="_blank" rel="noopener noreferrer" aria-label="View 8-9 Nov ASCA Gallery (opens in new window)">
                 View 8-9 Nov ASCA Gallery
             </a>
-	    <!--<p class="gallery-note">Replace the link above with your Google Drive folder link</p> -->
         </section>
 
         <!-- Contact Section -->
-        <section class="contact" id="contact">
-            <h2>Get In Touch</h2>
-            <div class="contact-info">
+        <section class="contact" id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Get In Touch</h2>
+            <address class="contact-info">
                 <p><strong>Email:</strong> <a href="mailto:willandrileyhoward@gmail.com">willandrileyhoward@gmail.com</a></p>
                 <p><a href="https://forms.gle/EPuT14ojRWfHfh8j6">Contact form</a></p>
                 <p><strong>Instagram:</strong> <a href="https://instagram.com/howardphotographyco" target="_blank" rel="noopener noreferrer">@howardphotographyco</a></p>
-		<!-- <p><strong>Phone:</strong> <a href="tel:+15555551234">(555) 555-1234</a></p> -->
-            </div>
+            </address>
         </section>
 
         <!-- Footer -->
         <footer>
-            <p>&copy; 2025 Howard Photography. All rights reserved.</p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-heading">Howard Photography</h3>
+                    <p class="footer-tagline">Capturing moments that matter</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <nav class="footer-nav">
+                        <a href="index.html" class="footer-link">Home</a>
+                        <a href="services.html" class="footer-link">Services</a>
+                        <a href="#contact" class="footer-link">Contact</a>
+                    </nav>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Connect</h4>
+                    <div class="footer-contact">
+                        <a href="mailto:willandrileyhoward@gmail.com" class="footer-link">Email</a>
+                        <a href="https://instagram.com/howardphotographyco" target="_blank" rel="noopener noreferrer" class="footer-link">Instagram</a>
+                        <a href="https://forms.gle/EPuT14ojRWfHfh8j6" class="footer-link">Contact Form</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Howard Photography. All rights reserved.</p>
+            </div>
         </footer>
     </main>
 </body>
