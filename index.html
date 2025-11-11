@@ -78,7 +78,26 @@
     <!-- Skip to main content for screen readers -->
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
+    <!-- Header loading skeleton -->
+    <div class="header-skeleton">
+        <div class="header-container">
+            <div class="skeleton-logo"></div>
+            <div class="skeleton-nav">
+                <div class="skeleton-link"></div>
+                <div class="skeleton-link"></div>
+                <div class="skeleton-link"></div>
+            </div>
+        </div>
+    </div>
+
     <!-- Header loaded dynamically from header.html -->
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
 
     <main id="main-content">
         <!-- Hero Section -->
@@ -148,7 +167,31 @@
 
         <!-- Footer -->
         <footer>
-            <p>&copy; 2025 Howard Photography. All rights reserved.</p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-heading">Howard Photography</h3>
+                    <p class="footer-tagline">Capturing moments that matter</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <nav class="footer-nav">
+                        <a href="index.html" class="footer-link">Home</a>
+                        <a href="services.html" class="footer-link">Services</a>
+                        <a href="#contact" class="footer-link">Contact</a>
+                    </nav>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Connect</h4>
+                    <div class="footer-contact">
+                        <a href="mailto:willandrileyhoward@gmail.com" class="footer-link">Email</a>
+                        <a href="https://instagram.com/howardphotographyco" target="_blank" rel="noopener noreferrer" class="footer-link">Instagram</a>
+                        <a href="https://forms.gle/EPuT14ojRWfHfh8j6" class="footer-link">Contact Form</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Howard Photography. All rights reserved.</p>
+            </div>
         </footer>
     </main>
 </body>
