@@ -1226,13 +1226,11 @@ footer {
     }
 }
 
-/* Gallery Grid */
+/* Gallery Grid - Masonry Layout */
 .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 30px;
+    column-count: 3;
+    column-gap: 30px;
     margin: 0 auto;
-    align-items: start;
 }
 
 .gallery-item {
@@ -1243,6 +1241,10 @@ footer {
     border: 1px solid var(--border-color);
     cursor: pointer;
     transition: all 0.3s ease;
+    margin-bottom: 30px;
+    break-inside: avoid;
+    display: inline-block;
+    width: 100%;
 }
 
 .gallery-item:hover {
@@ -1325,8 +1327,12 @@ footer {
     }
 
     .gallery-grid {
-        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-        gap: 25px;
+        column-count: 2;
+        column-gap: 25px;
+    }
+
+    .gallery-item {
+        margin-bottom: 25px;
     }
 }
 
@@ -1358,8 +1364,12 @@ footer {
     }
 
     .gallery-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
+        column-count: 1;
+        column-gap: 20px;
+    }
+
+    .gallery-item {
+        margin-bottom: 20px;
     }
 
     .gallery-cta {
