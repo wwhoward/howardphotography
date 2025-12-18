@@ -73,25 +73,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
-    <script src="header.js"></script>
+    <script src="header.js" defer></script>
 </head>
 <body>
     <!-- Skip to main content for screen readers -->
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <!-- Header loading skeleton -->
-    <div class="header-skeleton">
+    <!-- Header -->
+    <header class="site-header">
         <div class="header-container">
-            <div class="skeleton-logo"></div>
-            <div class="skeleton-nav">
-                <div class="skeleton-link"></div>
-                <div class="skeleton-link"></div>
-                <div class="skeleton-link"></div>
-            </div>
+            <a href="index.html" class="site-logo">Howard Photography</a>
+            <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <nav class="main-navigation">
+                <a href="index.html" class="nav-link" data-page="index">Home</a>
+                <a href="services.html" class="nav-link" data-page="services">Services</a>
+                <a href="index.html#contact" class="nav-link" data-page="contact">Contact</a>
+            </nav>
         </div>
-    </div>
-
-    <!-- Header loaded dynamically from header.html -->
+    </header>
 
     <!-- Back to Top Button -->
     <button class="back-to-top" aria-label="Back to top">
