@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="apple-touch-icon" href="favicon.svg">
+
+    <!-- Theme Color for Mobile Browsers -->
+    <meta name="theme-color" content="#0a0a0a">
+
+    <!-- Primary Meta Tags -->
+    <title>Gallery | Howard Photography</title>
+    <meta name="title" content="Gallery | Howard Photography">
+    <meta name="description" content="Browse our photography portfolio featuring couples, canine agility, and equestrian photography. See examples of our professional work capturing moments that matter.">
+    <meta name="keywords" content="photography portfolio, couples photography, dog photography, horse photography, canine agility, equestrian photography, pet portraits">
+    <meta name="author" content="Howard Photography">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://howard-photography.com/gallery.html">
+    <meta property="og:title" content="Gallery | Howard Photography">
+    <meta property="og:description" content="Browse our photography portfolio featuring couples, canine agility, and equestrian photography.">
+    <meta property="og:site_name" content="Howard Photography">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://howard-photography.com/gallery.html">
+    <meta property="twitter:title" content="Gallery | Howard Photography">
+    <meta property="twitter:description" content="Browse our photography portfolio featuring couples, canine agility, and equestrian photography.">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://howard-photography.com/gallery.html">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ImageGallery",
+      "name": "Howard Photography Gallery",
+      "description": "Portfolio of couples, canine, and equestrian photography",
+      "creator": {
+        "@type": "ProfessionalService",
+        "name": "Howard Photography",
+        "url": "https://howard-photography.com",
+        "email": "willandrileyhoward@gmail.com"
+      }
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="header.js" defer></script>
+</head>
+<body>
+    <!-- Skip to main content for screen readers -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="site-logo">Howard Photography</a>
+            <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <nav class="main-navigation">
+                <a href="index.html" class="nav-link" data-page="index">Home</a>
+                <a href="services.html" class="nav-link" data-page="services">Services</a>
+                <a href="gallery.html" class="nav-link" data-page="gallery">Gallery</a>
+                <a href="index.html#contact" class="nav-link" data-page="contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <main id="main-content">
+        <!-- Gallery Hero Section -->
+        <section class="gallery-hero" aria-labelledby="gallery-heading">
+            <h1 id="gallery-heading">Gallery</h1>
+            <p class="gallery-subtitle">Explore our portfolio of couples, canine, and equestrian photography</p>
+        </section>
+
+        <!-- Gallery Tabs Section -->
+        <section class="gallery-section" aria-labelledby="gallery-tabs-label">
+            <h2 id="gallery-tabs-label" class="visually-hidden">Photography Categories</h2>
+
+            <!-- Tab Controls -->
+            <div class="gallery-tabs" role="tablist">
+                <input type="radio" name="gallery-tab" id="tab-couples" class="tab-input" checked aria-label="View couples photography">
+                <input type="radio" name="gallery-tab" id="tab-canine" class="tab-input" aria-label="View canine photography">
+                <input type="radio" name="gallery-tab" id="tab-equestrian" class="tab-input" aria-label="View equestrian photography">
+
+                <div class="tab-buttons">
+                    <label for="tab-couples" class="tab-button" role="tab" tabindex="0">Couples</label>
+                    <label for="tab-canine" class="tab-button" role="tab" tabindex="0">Canine</label>
+                    <label for="tab-equestrian" class="tab-button" role="tab" tabindex="0">Equestrian</label>
+                </div>
+
+                <!-- Couples Gallery -->
+                <div class="tab-content" id="content-couples" role="tabpanel" aria-labelledby="tab-couples">
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <img src="gallery/couples/couples-1.JPG" alt="Couples photography - Portrait 1" loading="lazy">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="gallery/couples/couples-2.jpeg" alt="Couples photography - Portrait 2" loading="lazy">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="gallery/couples/couples-3.JPG" alt="Couples photography - Portrait 3" loading="lazy">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="gallery/couples/couples-4.JPG" alt="Couples photography - Portrait 4" loading="lazy">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="gallery/couples/couples-5.JPG" alt="Couples photography - Portrait 5" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Canine Gallery -->
+                <div class="tab-content" id="content-canine" role="tabpanel" aria-labelledby="tab-canine">
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <img src="gallery/canine/canine-1.JPG" alt="Canine photography - Dog portrait 1" loading="lazy">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="gallery/canine/canine-2.JPG" alt="Canine photography - Dog portrait 2" loading="lazy">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="gallery/canine/canine-3.jpg" alt="Canine photography - Dog portrait 3" loading="lazy">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="gallery/canine/canine-4.jpg" alt="Canine photography - Dog portrait 4" loading="lazy">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="gallery/canine/canine-5.jpg" alt="Canine photography - Dog portrait 5" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Equestrian Gallery -->
+                <div class="tab-content" id="content-equestrian" role="tabpanel" aria-labelledby="tab-equestrian">
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <img src="gallery/equestrian/equestrian-1.jpg" alt="Equestrian photography - Horse portrait 1" loading="lazy">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="gallery/equestrian/equestrian-2.jpg" alt="Equestrian photography - Horse portrait 2" loading="lazy">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="gallery/equestrian/equestrian-3.JPG" alt="Equestrian photography - Horse portrait 3" loading="lazy">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="gallery/equestrian/equestrian-4.JPG" alt="Equestrian photography - Horse portrait 4" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="gallery-cta" aria-labelledby="cta-heading">
+            <h2 id="cta-heading">Ready to Book Your Session?</h2>
+            <p>Let's create beautiful images that tell your story.</p>
+            <a href="index.html#contact" class="cta-button">Get In Touch</a>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-heading">Howard Photography</h3>
+                    <p class="footer-tagline">Capturing moments that matter</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <nav class="footer-nav">
+                        <a href="index.html" class="footer-link">Home</a>
+                        <a href="services.html" class="footer-link">Services</a>
+                        <a href="gallery.html" class="footer-link">Gallery</a>
+                        <a href="index.html#contact" class="footer-link">Contact</a>
+                    </nav>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Connect</h4>
+                    <div class="footer-contact">
+                        <a href="mailto:willandrileyhoward@gmail.com" class="footer-link">Email</a>
+                        <a href="https://instagram.com/howardphotographyco" target="_blank" rel="noopener noreferrer" class="footer-link">Instagram</a>
+                        <a href="https://forms.gle/EPuT14ojRWfHfh8j6" class="footer-link">Contact Form</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Howard Photography. All rights reserved.</p>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
