@@ -148,6 +148,52 @@ git push origin master
 
 Changes will appear on your live site within a few minutes.
 
+## Web Analytics Setup
+
+To track visitors to your site, you can add web analytics. Here are recommended options:
+
+### Option 1: Google Analytics (Free)
+
+1. Sign up at [Google Analytics](https://analytics.google.com/)
+2. Create a new property for your website
+3. Get your tracking code (Google Analytics 4)
+4. Add the tracking code to `index.html` before the closing `</head>` tag:
+
+```html
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+```
+
+### Option 2: Plausible Analytics (Privacy-focused, Paid)
+
+1. Sign up at [Plausible.io](https://plausible.io/)
+2. Add your domain
+3. Add the tracking script to `index.html` before the closing `</head>` tag:
+
+```html
+<!-- Plausible Analytics -->
+<script defer data-domain="your-domain.com" src="https://plausible.io/js/script.js"></script>
+```
+
+### Option 3: Simple Analytics (Privacy-focused, Paid)
+
+1. Sign up at [SimpleAnalytics.com](https://simpleanalytics.com/)
+2. Add the tracking script to `index.html` before the closing `</head>` tag:
+
+```html
+<!-- Simple Analytics -->
+<script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+<noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
+```
+
+**Privacy Note:** Plausible and Simple Analytics are privacy-focused alternatives that don't use cookies and are GDPR compliant by default.
+
 ## Troubleshooting
 
 **Site not loading after setup:**
