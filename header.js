@@ -83,7 +83,8 @@ document.addEventListener('DOMContentLoaded', function() {
             const tabMap = {
                 'couples': 'tab-couples',
                 'canine': 'tab-canine',
-                'equestrian': 'tab-equestrian'
+                'equestrian': 'tab-equestrian',
+                'graduation': 'tab-graduation'
             };
 
             if (hash && tabMap[hash]) {
